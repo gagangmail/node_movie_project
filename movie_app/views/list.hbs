@@ -1,0 +1,21 @@
+<table>
+    <tr>
+        <td><b>Movie Title</b></td>
+        <td><b>Movie Language</b></td>
+        <td><b>Movie Director</b></td>
+        <td><b>Date Released</b></td>
+        <td><b> Budget</b></td>
+        <td><b>Movie Cast</b></td>
+    </tr>
+    {{#each data}}
+
+    <tr>
+        <td>{{this.title}}</td>
+        <td>{{this.language}}</td>
+        <td>{{this.director}}</td>
+        <td>{{this.date_released}}</td>
+        <td>{{this.budget}}</td>
+        <td>{{this.cast}}</td>
+    </tr>
+    {{/each}}
+</table>

@@ -1,0 +1,31 @@
+<form action="/movies/update_confirm" method="POST">
+This object contains title: {{this.title}}<br> title: {{this.laguage}} <br> director: {{this.director}}
+<table>
+  <tr>
+    <td><label>Movie Title</label></td>
+    <td><input type="text" name="title" value="{{this.title}}" /></td>
+    <td>{{this.title}}</td>
+</tr>    <br><br>
+<tr>
+    <td><label>Movie Language</label></td>
+    <td><input type="text" name="language" value={{this.language}} /></td>
+</tr>    <br><br>
+<tr>
+    <td><label>Movie Director</label></td>
+    <td><input type="text" name="director" value={{this.director}} /></td>
+</tr>    <br><br>
+<tr>
+    <td>  <label>Date Released</label></td>
+    <td><input type="text" name="date_released" value={{this.date_released}} /></td>
+</tr>    <br><br>
+<tr>
+    <td><label>Budget</label></td>
+    <td><input type="text" name="budget" value={{this.budget}} /></td>
+</tr>    <br><br>
+<tr>
+    <td><label>Cast</label></td>
+    <td><input type="text" name="cast">{{this.cast}}</input</td>
+</tr>    <br><br>
+</table>
+    <button type="submit">Update Movie</button>
+</form>
